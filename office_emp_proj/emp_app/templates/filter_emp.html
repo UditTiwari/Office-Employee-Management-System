@@ -10,17 +10,17 @@
     <body>
         <div class="container">
             <h1>Filter Employee Details</h1>
-            <form action="/filter_app" method="post">
+            <form action="/filter_emp" method="post">
                 {% csrf_token %}
                 
                 <label for="name" >Employee  Name</label><br>
                 <input type="text" id="name" name="name" value="{{name}}"><br>
 
                 <label for="dept" >Departement</label><br>
-                <input type="number" id="dept" name="dept" value="{{dept}}"><br>
+                <input type="text" id="dept" name="dept" value="{{dept}}"><br>
 
                 <label for="role" >Role</label><br>
-                <input type="NUMER" id="role" name="role" value="{{role}}"><br>
+                <input type="text" id="role" name="role" value="{{role}}"><br>
 
             
                 <hr>
